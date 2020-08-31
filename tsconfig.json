@@ -1,0 +1,15 @@
+{
+"compilerOptions": {
+  "target": "ES6",
+  "jsx": "react",
+  "noEmit": false,
+  "allowSyntheticDefaultImports": true,
+  "importHelpers": true,
+  "moduleResolution": "Node"
+},
+"exclude": [
+  "node_modules",
+  "dev_server.js"
+]
+}
+
