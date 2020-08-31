@@ -1,5 +1,11 @@
+$sectionBg:#000;
+
 *,*:before,*:after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.header,.section,.footer{
+    background-color: $sectionBg;
 }
