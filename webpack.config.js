@@ -47,7 +47,15 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: fileName('css'),
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, './src/public'),
+                    to: path.resolve(__dirname, 'dist/public'),
+                }
+            ]
+        }),
     ],
     module: {
         rules:[

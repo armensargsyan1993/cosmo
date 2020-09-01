@@ -1,10 +1,14 @@
 import React from 'react';
-import Header from './Header';
+import Header from './header/Header';
+import NavbarComponent from './header/navbar/Navbar';
 
 
 const App: React.FC = () => {
   return (
-    <Header/>
+    <div className="wrapper">
+      <NavbarComponent/>
+      <Header/>
+    </div>
     )
 };
 
